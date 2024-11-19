@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', serif;
+    background-color: #002233; /* Ganti dengan warna dominan Anda */
+    color: #ffffff;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #ffcc00; /* Ganti dengan warna aksen Anda */
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
