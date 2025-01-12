@@ -27,6 +27,10 @@
 		  font-family: 'NamaFont2';
 		  src: url('share/Honey-Carrot.ttf') format('truetype');
 		}
+		@font-face {
+		  font-family: 'JudulUndangan';
+		  src: url('asset/font/GreatVibes-Regular.ttf') format('truetype');
+		}
 
         * { 
         	margin: 0; 
@@ -35,7 +39,8 @@
         }
         
         body { 
-        	background: #eeeee4;
+        	/* background: #eeeee4; */
+			background-image: url('image/background.jpg');
         	overflow-x:hidden;
         }
 
@@ -121,13 +126,14 @@
 				font-size: 10px!important;
 			}
 			#target-date{
-				font-size: 12px;
+				font-size: 25px;
+				font-family: 'JudulUndangan';
 			}
 			.imgBismillah{
 				width: 40%!important;
 			}
 			.titleWedding{
-				font-size: 30px!important;
+				font-size: 60px!important;
 			}
 			.nameDesc{
 				font-size: 30px!important;
@@ -157,11 +163,24 @@
 			font-size: 13px;
 		}
 		#target-date{
-			 color:#603416;
+			color: #212b5b;
+			font-size: 30px;
+			font-family: 'JudulUndangan';
 		}
 		.titleWedding{
 			 color: #212b5b;
-			 font-size: 20px;
+			 font-size: 70px;
+			 font-family: 'JudulUndangan';
+		}
+		.titleWeddingIn{
+			 color: #212b5b;
+			 font-size: 70px;
+			 font-family: 'JudulUndangan';
+		}
+		.titleWeddingName{
+			 color: #212b5b;
+			 font-size: 50px;
+			 font-family: 'JudulUndangan';
 		}
 		.imgBismillah{
 			width: 30%;
@@ -169,7 +188,7 @@
 		.nameDesc{
 			font-size: 40px;
 			font-family: 'NamaFont', sans-serif;
-			color: #f5f5f6;
+			color: #212b5b;
 		}
 		p{
 			color:#603416;
@@ -192,8 +211,8 @@
 			color:white;
 		}
 		#playPauseButton{
-			background: #603416;
-	  		border: 2px solid #603416;
+			background: #232d5f;
+	  		border: 2px solid #232d5f;
 	  		padding: 7px;
 	  		border-radius: 100px;
 	  		width: 40px;
@@ -273,10 +292,10 @@
     		</div>
     		<div class="col-md-5 pt-5">
     			<div class="text-center pt-5">
-			    	<img data-aos="zoom-in-down" data-aos-duration="2000" src="share/bismillah.png" class="imgBismillah">
-			    	<p data-aos="zoom-in-up" data-aos-duration="2000" class="titleWedding">The Wedding Of</p>
+			    	<!-- <img data-aos="zoom-in-down" data-aos-duration="2000" src="share/bismillah.png" class="imgBismillah"> -->
+			    	<p data-aos="zoom-in-up" data-aos-duration="2000" class="titleWeddingIn">The Wedding Of</p>
 			    	<div data-aos="fade-down" data-aos-duration="2000">
-			    		 <p class="name mb-0">Riska & Rizki</p>
+			    		 <p class="titleWeddingName">Riska & Rizki</p>
 			    	</div>
 			   
 	    			<div data-aos="fade-up" data-aos-duration="2000" class="d-flex justify-content-center">
@@ -308,52 +327,51 @@
 	    		
 				</div>
 				<div class="text-center mt-5 pt-5 mb-5 pb-5 " style="height:auto">
-					<p data-aos="fade-up" data-aos-duration="1000" style="color: #212b5b;">Assalamu’alaikum wr.wb</p>
-					<p data-aos="fade-up" data-aos-duration="2000" style="color: #212b5b;">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta’ala, Insya Allah kami akan menyelenggarakan Acara Pernikahan :</p>
+					<p data-aos="fade-up" data-aos-duration="1000" style="color: #212b5b;"><strong>Assalamu’alaikum Wr.Wb.</strong></p>
+					<p data-aos="fade-up" data-aos-duration="2000" style="color: #212b5b;">
+						<strong>Dengan memohon rahmat dan ridho Allah SWT. <br> Insha Allah kami akan menyelenggarakan Acara Pernikahan :</strong>
+					</p>
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center" data-aos="fade-down" data-aos-duration="3000">
-							<img class="img-fluid" style="width:30%" src="share/akhwat.png">
-							
-						</div>
+							<img class="img-fluid" style="width:30%; border-radius: 15px;" src="image/riska.JPG">
+						</div>						
 						<div class="col-12" data-aos="fade-up" data-aos-duration="1000">
-							<p class="nameDesc">Riska Nopiana</p>
-							<p class="mb-0" style="color: #212b5b;">Putri Terakhir Dari</p>
-							<p style="color: #212b5b;">Nama</p>
+							<p class="nameDesc" style="font-family: 'JudulUndangan';"><strong>Riska Nopiana</strong></p>
+							<p class="mb-0" style="color: #212b5b;">Putri Bungsu Dari</p>
+							<p style="color: #212b5b;">Bapak Rasiyo (Alm.) & Ibu Kamipah (Almh.)</p>
 						</div>
 					</div>
-					<p class="nameDesc" data-aos="fade-up" data-aos-duration="1000">&</p>
+					<p class="nameDesc" data-aos="fade-up" data-aos-duration="1000" style="font-family: 'JudulUndangan';">&</p>
 					<div class="row">
 						<div class="col-12 d-flex justify-content-center"  data-aos="fade-up" data-aos-duration="1000">
-							<img class="img-fluid" style="width:30%" src="share/ikhwan.png">
+							<img class="img-fluid" style="width:30%; border-radius: 15px;" src="image/rizki.JPG">
 							
 						</div>
 						<div class="col-12"  data-aos="fade-down" data-aos-duration="1000">
-							<p class="nameDesc">Muhammad Rizki</p>
-							<p class="mb-0" style="color: #212b5b;">Putra Pertama Dari</p>
-							<p style="color: #212b5b;">Nama</p>
+							<p class="nameDesc" style="font-family: 'JudulUndangan';"><strong>Muhammad Rizki</strong></p>
+							<p class="mb-0" style="color: #212b5b;">Putra Sulung Dari</p>
+							<p style="color: #212b5b;">Bapak Prihwadi & Ibu Yuni Masitah (Almh.)</p>
 						</div>
 					</div>
 				</div>
 				<div class="text-center mt-5 pt-5 mb-5 pb-5 ">
-					<p class="name" data-aos="fade-up" data-aos-duration="1000">Save Date</p>
+					<p class="name" data-aos="fade-up" data-aos-duration="1000" style="font-family: 'JudulUndangan';">Save The Date</p>
 					<div class="row justify-content-center">
 						<div class="col-md-8" data-aos="fade-up" data-aos-duration="1000">
 							<div class="card p-2">
-								<p class="mb-0 nameDesc">Akad Nikah</p>
-								<div class="ps-3 mt-4" style="text-align: left;">
+								<p class="mb-0 nameDesc" style="color: #f5f5f6; font-family: 'JudulUndangan';">Akad Nikah</p>
+								<div class="ps-3 mt-1" style="text-align: left;">
 									<p class="mb-1" style="color:  #f5f5f6;"><i class="fa-regular fa-calendar-days me-2"></i> Ahad, 09 Februari 2025</p>
 								</div>
 
 								<div class="ps-3 " style="text-align: left;">
-									<p class="mb-1" style="color:  #f5f5f6;"><i class="fa-regular fa-clock me-2"></i> 09.00 WIB - Selesai</p>
+									<p class="mb-1" style="color:  #f5f5f6;"><i class="fa-regular fa-clock me-2"></i> 10.00 WIB. - 11.00 WIB.</p>
 								</div>
 
 								<div class="ps-3 d-flex" style="text-align: left;">
 									<p class="mb-0" style="color:  #f5f5f6;"><i class="fa-solid fa-location-dot me-3"></i></p>
 									<div>
-										<p class="mb-0" style="color:  #f5f5f6;">Alamat</p>
-										<p class="mb-0" style="color:  #f5f5f6;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, magni!</p>
-										<p class="mb-0" style="color:  #f5f5f6;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, molestias?<p>
+										<p class="mb-0" style="color:  #f5f5f6;">Bumi Ciangsana Damai B7/3<br>(Lapangan Bulu Tangkis Kopra)</p>
 									</div>
 								</div>
 							</div>
@@ -364,21 +382,19 @@
 					<div class="row justify-content-center mt-4">
 						<div class="col-md-8"  data-aos="fade-up" data-aos-duration="1000">
 							<div class="card p-2">
-								<p class="mb-0 nameDesc" style="color:  #f5f5f6;">Resepsi</p>
-								<div class="ps-3 mt-4" style="text-align: left;">
+								<p class="mb-0 nameDesc" style="color:  #f5f5f6; font-family: 'JudulUndangan';">Resepsi</p>
+								<div class="ps-3 mt-1" style="text-align: left;">
 									<p class="mb-1" style="color:  #f5f5f6;"><i class="fa-regular fa-calendar-days me-2"></i> Ahad, 09 Februari 2025</p>
 								</div>
 
 								<div class="ps-3 " style="text-align: left;">
-									<p class="mb-1" style="color:  #f5f5f6;"><i class="fa-regular fa-clock me-2"></i> 10.00 WIB - Selesai</p>
+									<p class="mb-1" style="color:  #f5f5f6;"><i class="fa-regular fa-clock me-2"></i> 11.00 WIB. - 16.00 WIB.</p>
 								</div>
 
 								<div class="ps-3 d-flex" style="text-align: left;">
 									<p class="mb-0" style="color:  #f5f5f6;"><i class="fa-solid fa-location-dot me-3"></i></p>
 									<div>
-										<p class="mb-0" style="color:  #f5f5f6;">Alamat</p>
-										<p class="mb-0" style="color:  #f5f5f6;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, ut!</p>
-										<p class="mb-0" style="color:  #f5f5f6;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, vel.<p>
+										<p class="mb-0" style="color:  #f5f5f6;">Bumi Ciangsana Damai B7/3 <br>(Lapangan Bulu Tangkis Kopra)</p>
 									</div>
 								</div>
 							</div>
@@ -387,16 +403,16 @@
 				
 					</div>
 					<div class="row justify-content-center mt-4">
-						<div class="col-md-8"  data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-md-8" data-aos="fade-up" data-aos-duration="1000">
 							<div class="card p-0">
-								<iframe src="googlemaps" style="border:0;width: 100%;border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<iframe src="https://www.google.com/maps?q=Bumi+Ciangsana+Damai&hl=id&z=14&output=embed" style="border:0;width: 100%;border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							</div>
-						</div>
+						</div>						
 					</div>
 
 					<div class="row justify-content-center mt-4">
 						<div class="col-md-8"  data-aos="fade-up" data-aos-duration="1000">
-							<a class="btn btnLoct" href="googlemaps" target="_blank">
+							<a class="btn btnLoct" href="https://maps.app.goo.gl/erLfs6hnb6bS9che6" target="_blank">
 								<i class="fa-solid fa-location-dot me-3"></i>Lihat Lokasi
 							</a>
 						</div>
@@ -405,7 +421,7 @@
 				</div>
 
 				<div class="mt-5 pt-5 mb-5 pb-5 text-center">
-					<p class="name" data-aos="fade-up" data-aos-duration="1000">Gallery</p>
+					<p class="name" data-aos="fade-up" data-aos-duration="1000" style="font-family: 'JudulUndangan';">Gallery</p>
 					<div class="row justify-content-center">
 						<div class="col-md-8"  data-aos="fade-up" data-aos-duration="1000">
 							<div class="card p-0" style="border: none;background: unset;box-shadow:unset"> 
@@ -489,7 +505,7 @@
 				</div>
 				
   				<audio id="myAudio" loop>
-				    <source src="share/Audio.mp3" type="audio/mpeg">
+				    <source src="asset/song.mp3" type="audio/mpeg">
 				</audio>
 
 			  	<button id="playPauseButton">
@@ -515,30 +531,27 @@
                 <p 
                     data-aos="zoom-in-up" data-aos-duration="2000" 
                     class="titleWedding">
-                    The Wedding Of
+                    Undangan Pernikahan
                 </p>
                 <div data-aos="fade-down" data-aos-duration="2000">
                   <p 
-                    class="name mb-0"
+                    class="name mb-0" style="font-family: 'JudulUndangan';"
                     >
                     Riska & Rizki
                   </p>
                 </div>
                 <div data-aos="fade-up" data-aos-duration="2000" class="d-flex justify-content-center">
                 </div>
-                <p><div id="nama-tamu"></div></p>
-                <p 
-                    style="
-                        color: #154c79; 
-                        font-size: larger;
-                        
-                    "
-                    >
-                    Tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.
+                <p style="margin-top: 0%;"><div id="nama-tamu"></div><strong>Kepada Yth.</strong><br> Bapak/Ibu/Saudara/i<br>  <strong id="divisi" style="font-size: large;">Nama Tamu</strong></p>
+                <p style="color: #154c79; font-size: x-small;">
+                    Tanpa Mengurangi Rasa Hormat, Kami Mengundang <br> Anda Untuk Hadir Di Acara Pernikahan Kami.
                 </p>
-                <button type="button" id="openInvitation" class="btn btnLoct mt-3" data-bs-dismiss="modal"> 
+                <button type="button" id="openInvitation" class="btn btnLoct" data-bs-dismiss="modal"> 
                   <i class="fa-regular fa-envelope"></i> Buka Undangan
                 </button>
+				<p style="color: #154c79; font-size: xx-small; margin-top: 0%;">
+                    * Mohon maaf apabila ada kesalahan <br> penulisan nama/gelar
+                </p>
               </div>
             </div>
           </div>
@@ -674,6 +687,11 @@
         centerMode: true,
         focusOnSelect: true
       });
+
+	  const url = new URL(window.location.href);
+	  const divisi = url.searchParams.get('divisi');
+	  document.getElementById('divisi').textContent = divisi
+
     </script>
 </body>
 </html>
