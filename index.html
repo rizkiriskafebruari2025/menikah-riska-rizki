@@ -9,9 +9,8 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
 
-	 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <!-- Slick Theme CSS (opsional, jika ingin menggunakan default styling) -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
 </head>
     <style>
@@ -489,8 +488,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					
+					</div>	
 				</div>
 				<div class="mt-5 pt-5 pb-5 text-center">
 					<i aria-hidden="true" style="color: #212b5b;font-size: 35px;" class="fas fa-gift"></i>
@@ -506,16 +504,43 @@
 									<img class="img-fluid" style="width:20%" src="image/bca.png" />
 								</div>
 								<p class="mb-0" style="color: #212b5b">A/N Riska Nopiana</p>
-								<p><span id="textToCopy" style="color: #212b5b">5675040157</span> <i class="fa-regular fa-copy" id="copyButton" style="cursor:pointer"></i></p>
-								<div class="d-flex justify-content-center mt-4 mb-2">
+								<p><span id="textToCopy" style="color: #212b5b">5675040157</span> <i class="fa-regular fa-copy" id="copyButtonRekBCA" style="cursor:pointer"></i></p>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-md-8"  data-aos="fade-up" data-aos-duration="1000">
+							<div style="border-radius: 15px;">
+								<div class="d-flex justify-content-center mt-4 mb-0">
 									<img class="img-fluid" style="width:20%" src="image/mantap.png" />
 								</div>
 								<p class="mb-0" style="color: #212b5b">A/N Riska Nopiana</p>
-								<p><span id="textToCopy" style="color: #212b5b">2102107555889</span> <i class="fa-regular fa-copy" id="copyButton" style="cursor:pointer"></i></p>
+								<p><span id="textToCopy" style="color: #212b5b">2102107555889</span> <i class="fa-regular fa-copy" id="copyButtonRekMantap" style="cursor:pointer"></i></p>
 							</div>
 						</div>
 					</div>
 
+				</div>
+				<div class="mt-5 pt-5 mb-5 pb-5 text-center" id="souvenirCoupon">
+					<p class="name" data-aos="fade-up" data-aos-duration="1000" style="font-family: 'JudulUndangan';">Kupon Souvenir</p>
+					<div class="row justify-content-center">
+						<div class="col-md-8"  data-aos="fade-up" data-aos-duration="1000">
+							<div class="card p-0" style="border: none;background: unset;box-shadow:unset"> 
+								<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+	  								<div class="carousel-inner">
+	    								<div class="carousel-item active text-center">
+											<img src="image/kupon.jpg" style="border-radius: 8px;" class="d-block w-50 mx-auto" alt="...">
+											<p data-aos="fade-down" data-aos-duration="1000" 
+											   class="mx-auto mt-3" 
+											   style="width: 70%; color: #212b5b; text-align: center;">
+												Mohon Tunjukan Kupon Souvenir ini di Meja Tamu Untuk Penukaran Souvenir
+											</p>
+										</div>																			
+	  								</div>
+								</div>
+							</div>
+						</div>
+					</div>	
 				</div>
 				<div class="mt-5 mb-5 pb-5 text-center">
 					<div class="d-flex justify-content-center">
@@ -594,8 +619,6 @@
      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
       <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
  
-
-    <!--     NOTE LINK URL ?to=bagus+%26+budi -->
     <script>
         $(document).ready(function () {
         	 $('#staticBackdrop').modal('show');
@@ -653,7 +676,7 @@
 	    AOS.init();
 
 
-	  $("#copyButton").click(function(){
+	  $("#copyButtonRekBCA").click(function(){
                 var textToCopy = $("#textToCopy").text();
                 copyToClipboard(textToCopy);
             });
@@ -666,7 +689,24 @@
                 $tempInput.remove();
                 Swal.fire({
                 icon: 'success',
-                title: 'Berhasil Di Copy',
+                title: 'Nomor Rekening Bank BCA Berhasil di Salin',
+            });
+        }
+
+	  $("#copyButtonRekMantap").click(function(){
+                var textToCopy = $("#textToCopy").text();
+                copyToClipboard(textToCopy);
+            });
+
+            function copyToClipboard(text) {
+                var $tempInput = $("<input>");
+                $("body").append($tempInput);
+                $tempInput.val(text).select();
+                document.execCommand("copy");
+                $tempInput.remove();
+                Swal.fire({
+                icon: 'success',
+                title: 'Nomor Rekening Berhasil di Salin',
             });
         }
 
@@ -715,6 +755,15 @@
 	  const url = new URL(window.location.href);
 	  const divisi = url.searchParams.get('divisi');
 	  document.getElementById('divisi').textContent = divisi
+
+
+	  const company = url.searchParams.get('company');
+	  if (company !== 'AGIT' && company !== "MandiriTaspen") {
+		document.getElementById("souvenirCoupon").style.display = "none";
+	  }
+
+
+	  
 
     </script>
 </body>
